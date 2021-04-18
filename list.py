@@ -50,3 +50,4 @@ print(words.index("Hello"))
 # list.count(item): Returns a count of how many times an item occurs in a list
 # list.remove(item): Removes an object from a list
 # list.reverse(): Reverses items in a list.
+
