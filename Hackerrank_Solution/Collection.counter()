@@ -1,0 +1,14 @@
+from collections import Counter
+sum = 0
+n = int(input())
+list_1 = list(input().split())
+list_1 = Counter(list_1)
+n = int(input())
+for i in range(n):
+    query = input().split()
+    if query[0] not in list_1.keys():
+        continue
+    if list_1[query[0]]!=0:
+        sum += int(query[1])
+        list_1[query[0]]-=1
+print(sum)
